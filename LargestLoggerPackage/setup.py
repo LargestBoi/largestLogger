@@ -3,9 +3,9 @@ import setuptools
 #Just the simple data about the lib
 setuptools.setup(
     name="LargestLogger",
-    version="0.0.5",
+    version="1.0.0",
     author="LargestBoi",
-    description="A simple, open source logging library. It can be easily added to a program and provides a colourful, reliable and managed logging system to your application/script!",
+    description="A simple, open source logging library. It can be easily added to a program and provides a colourful, reliable and managed logging system to your application/script! https://github.com/LargestBoi/LargestLogger",
     packages=["LargestLogger"],
     install_requires=['datetime', 'colorama'],
 )

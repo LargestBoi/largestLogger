@@ -1,5 +1,12 @@
-[13/02/2023 12:06:17 PM] Success:        LargestLogger running!
-[13/02/2023 12:06:17 PM] Info:           This is to be used when displaying basic information
-[13/02/2023 12:06:17 PM] Warning:        This is to be used to warn the user in the case of somthing unexpected occuring or possibly informing them of somthing irregular
-[13/02/2023 12:06:17 PM] Success:        This is to be used when a task has completed and reports such to the user!
-[13/02/2023 12:06:17 PM] Error:          This is to be used on exception or where a feature/function has failed completely
+[13/02/2023 01:49:00 PM] Success:        LargestLogger running!
+[13/02/2023 01:49:00 PM] Info:           This is to be used when displaying basic information
+[13/02/2023 01:49:00 PM] Warning:        This is to be used to warn the user in the case of somthing unexpected occuring or possibly informing them of somthing irregular
+[13/02/2023 01:49:00 PM] Success:        This is to be used when a task has completed and reports such to the user!
+[13/02/2023 01:49:00 PM] Error:          This is to be used on exception or where a feature/function has failed completely
+[13/02/2023 01:49:00 PM] Info:           Testing debugs 1-10 (Your usage of the debug system is set above and anything at or blow your set log level will be stated) :
+[13/02/2023 01:49:00 PM] Debug:          This is a debug level 1
+[13/02/2023 01:49:00 PM] Debug:          This is a debug level 2
+[13/02/2023 01:49:00 PM] Debug:          This is a debug level 3
+[13/02/2023 01:49:00 PM] Debug:          This is a debug level 4
+[13/02/2023 01:49:00 PM] Debug:          This is a debug level 5
+[13/02/2023 01:49:00 PM] Success:        Debugs 1-10 ran!

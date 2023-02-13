@@ -6,12 +6,18 @@ from colorama import Fore, Style
 class LargestLogger:
     #Creating variable to store the current directory where logs will be stored
     LogDir = None
+    #Creating variables to be used in the debug scope
+    DebugMode = None
+    DebugValue = None
     #Function to clean up log files into a folder and name them by the time the first log was ran
-    def StartUp(TestingMode:bool = False):
+    def StartUp(DebugMode:bool = False, DebugValue:int = 0, TestingMode:bool = False):
         #Initiates the colorama lib allowing coloured prints to run as intended
         colorama.init()
         #Stores the directory where the logs will be placed
         LargestLogger.LogDir = os.getcwd()
+        #Stores the values to be used within the debug system
+        LargestLogger.DebugMode = DebugMode
+        LargestLogger.DebugValue = DebugValue
         #If a previos log is present
         if os.path.isfile(f"{LargestLogger.LogDir}/Latest.log"):
             #Create a "Logs" folder if one isnt present
@@ -24,12 +30,20 @@ class LargestLogger:
             #Moves the old log into the folder and naming it appropriately by the date and time the first log was ran
             shutil.move(f"{LargestLogger.LogDir}/Latest.log",
                         f"{LargestLogger.LogDir}/Logs/{NewName}.log")
-        #If the startup was ran in testing mode display an example of all possible logs
+        #If the startup was run in testing mode display an example of all possible logs
         if TestingMode:
+            LargestLogger.Info(f"The logging path: {LargestLogger.LogDir}")
             LargestLogger.Info("This is an Info test!")
             LargestLogger.Warning("This is an Warning test!")
             LargestLogger.Success("This is an Success test!")
             LargestLogger.Error("This is an Error test!")
+            #Iterates to show debug in use
+            LargestLogger.Info("Testing debugs 1-10:")
+            count = 1
+            while count <= 10:
+                LargestLogger.Debug(f"This is a debug level {count}", count)
+                count = count + 1
+            LargestLogger.Success("Debugs 1-10 ran!")
         #Create a log to display the logger as ready
         LargestLogger.Success("LargestLogger running!")
     #Functions to be externally called to change the way logs are displayed and saved
@@ -41,6 +55,10 @@ class LargestLogger:
         LargestLogger.Output(2, Log)
     def Error(Log:str):
         LargestLogger.Output(3, Log)
+    def Debug(Log:str, LogLevel: int):
+        if LargestLogger.DebugMode:
+            if LargestLogger.DebugValue >= LogLevel:
+                LargestLogger.Output(4, Log)
     #The main function all other log types call back to
     #It parses the data and prepares a string to be saved
     #And outputted appropriately
@@ -64,6 +82,9 @@ class LargestLogger:
             case 3:
                 Type = "Error:         "
                 TypeColour = Fore.RED
+            case 4:
+                Type = "Debug:         "
+                TypeColour = Fore.CYAN
         #Output the text generated into a "Latest.log" file
         with open(f"{LargestLogger.LogDir}/Latest.log", "a+", encoding="utf-8") as LogFile:
             LogFile.writelines(f"[{StringedNow}] {Type} {Log}\n")

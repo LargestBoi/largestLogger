@@ -8,12 +8,12 @@ Just run ``python pip install LargestLogger`` and you have the logging library i
 
 # Installing from source
 Enter the "LargestLoggerPackage" directory.
-Ensure you have the latest setup tools installed by running ``python pip install --upgrade setuptools``.
-Once prepared just run ``python pip install .`` and the library will be installed from source!
+Ensure you have the latest setup tools installed by running ``pip install --upgrade setuptools``.
+Once prepared just run ``pip install .`` and the library will be installed from source!
 
 # Building from source
 Enter the "LargestLoggerPackage" directory.
-Ensure you have the latest setup tools installed by running ``python pip install --upgrade setuptools``.
+Ensure you have the latest setup tools installed by running ``pip install --upgrade setuptools``.
 Once prepared just run ``python setup.py sdist`` and the source will be built!
 
 # Issues/suggestions

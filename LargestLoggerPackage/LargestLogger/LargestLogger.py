@@ -21,13 +21,13 @@ class LargestLogger:
             LargestLogger.Warning("This is an Warning test!")
             LargestLogger.Success("This is an Success test!")
             LargestLogger.Error("This is an Error test!")
-    def Info(Data):
+    def Info(Data:str):
         LargestLogger.Output(0, Data)
-    def Warning(Data):
+    def Warning(Data:str):
         LargestLogger.Output(1, Data)
-    def Success(Data):
+    def Success(Data:str):
         LargestLogger.Output(2, Data)
-    def Error(Data):
+    def Error(Data:str):
         LargestLogger.Output(3, Data)
     def Output(LogType, Data):
         Type = None

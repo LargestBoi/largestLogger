@@ -11,6 +11,7 @@ LargestLogger.StartUp()
 #all possible prints/logs the program executes
 #LargestLogger.StartUp(True)
 
+#Just some examples of the logging code being used
 LargestLogger.Info("This is to be used when displaying basic information")
 LargestLogger.Warning("This is to be used to warn the user in the case of somthing unexpected occuring or possibly informing them of somthing irregular")
 LargestLogger.Success("This is to be used when a task has completed and reports such to the user!")

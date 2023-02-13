@@ -1,6 +1,6 @@
-#Importing the lib used to setup the package via a pip install
+#Importing the library used to setup the package via a pip install
 import setuptools
-#Just the simple data about the lib
+#Just the simple data about the library
 setuptools.setup(
     name="LargestLogger",
     version="1.0.0",

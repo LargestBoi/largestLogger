@@ -1,4 +1,4 @@
-#Importing all required modules/libs
+#Importing all required modules/librarys
 import os, shutil, colorama
 from datetime import datetime
 from colorama import Fore, Style

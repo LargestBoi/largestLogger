@@ -1,0 +1,5 @@
+[13/02/2023 12:06:14 PM] Success:        LargestLogger running!
+[13/02/2023 12:06:14 PM] Info:           This is to be used when displaying basic information
+[13/02/2023 12:06:14 PM] Warning:        This is to be used to warn the user in the case of somthing unexpected occuring or possibly informing them of somthing irregular
+[13/02/2023 12:06:14 PM] Success:        This is to be used when a task has completed and reports such to the user!
+[13/02/2023 12:06:14 PM] Error:          This is to be used on exception or where a feature/function has failed completely

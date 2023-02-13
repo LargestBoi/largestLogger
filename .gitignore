@@ -1,3 +1,5 @@
 venv/
 .idea/
+LargestLoggerPackage/dist/
+LargestLoggerPackage/LargestLogger.egg-info/
 .DS_Store*

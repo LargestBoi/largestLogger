@@ -3,8 +3,9 @@ A simple, open source logging library. It can be easily added to a program and p
 reliable and managed logging system to your application/script!
 
 # Installing via pip/PyPi
-Just run ``pip install LargestLogger`` and you have the logging library installed!
-[Here](https://pypi.org/project/LargestLogger/1.0.0/) is the link to the PyPi page of the library!
+Just run ``pip install largestLogger`` and you have the logging library installed!
+Running ``pip install --upgrade largestLogger`` will update the package!
+[Here](https://pypi.org/project/largestLogger) is the link to the PyPi page of the library!
 
 # Installing from source
 Enter the "LargestLoggerPackage" directory.

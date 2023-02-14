@@ -1,6 +1,6 @@
 #After installing the lib this is how you can bring it into
 #the scope of a file/script
-from LargestLogger import largestLogger
+from largestLogger import largestLogger
 
 #This line is needed in any script that uses this lib,
 #it should only be ran once and just prepares the logger,

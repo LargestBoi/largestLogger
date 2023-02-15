@@ -8,12 +8,12 @@ Running ``pip install --upgrade largestLogger`` will update the package!
 [Here](https://pypi.org/project/largestLogger) is the link to the PyPi page of the library!
 
 # Installing from source
-Enter the "LargestLoggerPackage" directory.
+Enter the "largestLoggerPackage" directory.
 Ensure you have the latest setup tools installed by running ``pip install --upgrade setuptools``.
 Once prepared just run ``pip install .`` and the library will be installed from source!
 
 # Building from source
-Enter the "LargestLoggerPackage" directory.
+Enter the "largestLoggerPackage" directory.
 Ensure you have the latest setup tools installed by running ``pip install --upgrade setuptools``.
 Once prepared just run ``python setup.py sdist`` and the source will be built!
 

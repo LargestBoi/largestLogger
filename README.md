@@ -1,3 +1,5 @@
+# Nothing on by this GitHub account will be updated by me, if you would like to fork anything you are free to!
+
 # LargestLogger
 A simple, open source logging library. It can be easily added to a program and provides a colourful,
 reliable and managed logging system to your application/script!
